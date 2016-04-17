@@ -4,6 +4,7 @@ before_script:
   - sleep 3 # give xvfb some time to start
   - bundle exec rackup &  # start a Web server
   - sleep 3 # give Web server some time to bind to sockets, etc
+  - psql -c 'create database blog_test;' -U postgres
 language: ruby
 rvm:
   - 2.3.0

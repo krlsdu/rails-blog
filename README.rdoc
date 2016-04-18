@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/krlsdu/rails-blog.svg?branch=master)](https://travis-ci.org/krlsdu/rails-blog)
+{<img src="https://travis-ci.org/krlsdu/rails-blog.svg?branch=master" alt="Build Status" />}[https://travis-ci.org/krlsdu/rails-blog]
 
 == README
 

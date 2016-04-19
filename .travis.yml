@@ -1,9 +1,9 @@
 before_script:
-  - "export DISPLAY=:99.0"
-  - "sh -e /etc/init.d/xvfb start"
-  - sleep 3 # give xvfb some time to start
-  - bundle exec rackup &  # start a Web server
-  - sleep 3 # give Web server some time to bind to sockets, etc
+  - export DISPLAY=:99.0
+  - sh -e /etc/init.d/xvfb start
+  - sleep 3
+  - bundle exec rackup &
+  - sleep 3
   - psql -c 'create database blog_test;' -U postgres
 language: ruby
 rvm:
@@ -15,3 +15,8 @@ deploy:
   app: rails--blog
   on:
     repo: krlsdu/rails-blog
+addons:
+  code_climate:
+    repo_token:
+      secure: bpa+TdGGqhJSIidZy15saWAV75ALH6ZKSaLir8L4ZogXSqgm6T5zASnd/z8RWB2XBWEW//ITCiR2P3jVzfNcWRaqpCCsEIFSQCP85f5pE0+Ih4NHtc4t7EFAiDFdCnDTia9sBYBpGKxGoQRG67VgJUpH2CaksaBkBjO5LnrsrTuaQ3NXAz78jiedN+Jj750t9y0so4/nC/45lyA7Ti86FTiycad41w5Lt9YnDYga1HhGhjXMcrMCn9qaotL7MgtC5EWfOJTpIfsuBzDCyMjbgoVhLKn99HxvkLj0a4s5mNnJeztJrFOCvbbkoyK325uFLFATMhZiylXULtoFTmF1v/vtDhXSQcsVgdZEfp33Pq8RsnUG0ApvdbEK4XH66Zwl45SDa626eOUoJgqCrDenFD/vhJ7P5gC9ptPaow8GVSTNi/B3IBGuZyBXmosGiKrIpXtL8Cor8Yaw3+dv1njbV2l22d4+Ed7u4UAPVV1t4SdIzC4yFGeywUHaJHble9PcDRctnj5OuTmaLfjbT4+DW3ksifrNzcBRWRPROplOVrXYqccYM+SnkMsGJdMZ+rDMtIKq2pUE/8BgrWwzmXFoEBERsaBw5AzmdgM1dFbzAMmc8hBLp73vFP9gJ/SR4ctjCTCdJ1Ca8vwIDfRYg36ytyzO6MXjxnYxLncv175n74k=
+

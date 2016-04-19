@@ -1,3 +1,5 @@
+{<img src="https://img.shields.io/badge/RubyDoc-rails--blog-blue.svg"/>}[http://www.rubydoc.info/github/krlsdu/rails-blog]
+
 {<img src="https://travis-ci.org/krlsdu/rails-blog.svg?branch=master" alt="Build Status" />}[https://travis-ci.org/krlsdu/rails-blog]
 
 {<img src="https://coveralls.io/repos/github/krlsdu/rails-blog/badge.svg?branch=master" alt="Coverage Status" />}[https://coveralls.io/github/krlsdu/rails-blog?branch=master]

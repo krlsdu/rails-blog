@@ -8,6 +8,8 @@
 
 {<img src="https://codeclimate.com/github/krlsdu/rails-blog/badges/issue_count.svg" />}[https://codeclimate.com/github/krlsdu/rails-blog]
 
+{<img src="http://inch-ci.org/github/krlsdu/rails-blog.svg?branch=master" alt="Inline docs" />}[http://inch-ci.org/github/krlsdu/rails-blog]
+
 
 == README
 

@@ -6,7 +6,7 @@ RSpec.describe WelcomeController, type: :controller do
   describe "GET index" do
     it "say 'Hello World' " do
     get :index
-    expect(response.body).to match /Hello/
+    expect(response.body).to match /"carlos"/
 
     end
 

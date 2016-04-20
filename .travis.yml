@@ -12,7 +12,9 @@ deploy:
   provider: heroku
   api_key:
     secure: hcUMRX6vfnJnnFSMtgyNAHwl8daGfo3/5W128rrUGiVMPdZnKSDQGb74RV0YSx/t6q8+Zd0PxJ9WGArepCev+zWLu4rxKTdZu5+0GgkkRvjnZHm1O1+Z95MdTMW63LKfE0zcvhsqYCMJWMBiSjx1p+m1xWOZfrKRWDGhMcogq914QrYSxq1+ipS5yA+eNfJtqU3UXNWAEFfOU4jCUz4BLqOCkj8JwJsi0Q22kooVwOi5doZoqPMCTaPbfx0RiKr5uI3skR2dfYONnUuO5LebGo8Abr3LxwhMnT2Yf1+2AjAHKInOXZ9OYqeZ3lNUiUrZtyxOATmSLSmVT0rZEXWHU+EOGgz19yE6gRIzbiuHisYrsGiAtJiwBU17fyKjm0BS5M53wXrFb2Gmglj7jUW152ofsm2aG+qUOLQfIgrOABcYnBDjKG+kf93ecPWvRaeK1UPuuMaE2mNEZf+bFQRd/k+ojAuiqlMEEn8c1H7ZjvD1U0OG7dInIa8voatcnPJkLvS6NkPJEYczFL3hGxNnuQlMhJ9mvewASqkLhKf/EX7FJOC4sI8/m8pFe/M7/rFl95Qp5UQDyOdAE85hntkGQyNCq4tDlEtdcH46B7Y3u2QtpPnj68qbEOcqTSvez0DgkPtZzrRXHlsFPgOKBn+0UwYT7xc10krob/SnUw45ysM=
+  run: "rake db:migrate"
   app: rails--blog
+    master: staging
   on:
     repo: krlsdu/rails-blog
 addons:

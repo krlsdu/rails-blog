@@ -16,4 +16,4 @@ deploy:
   on:
     repo: krlsdu/rails-blog
 addons:
-  code_climate:
+  code_climate

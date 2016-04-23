@@ -38,6 +38,8 @@ group :development, :test do
   gem 'coveralls', require: false
   gem 'rspec-rails', '~> 3.0'
   gem "codeclimate-test-reporter", require: nil
+  gem 'cucumber-rails', :require => false
+  gem 'database_cleaner'
 end
 
 group :development do

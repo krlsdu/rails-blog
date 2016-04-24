@@ -40,6 +40,7 @@ group :development, :test do
   gem "codeclimate-test-reporter", require: nil
   gem 'cucumber-rails', :require => false
   gem 'database_cleaner'
+  gem 'selenium-webdriver', '~> 2.53'
 end
 
 group :development do

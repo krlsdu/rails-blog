@@ -1,4 +1,5 @@
 require 'coveralls'
+require_relative "sauce_driver"
 require "codeclimate-test-reporter"
 CodeClimate::TestReporter.start
 Coveralls.wear!
@@ -94,4 +95,12 @@ RSpec.configure do |config|
   # as the one that triggered the failure.
   Kernel.srand config.seed
 =end
+  config.around(:example, :run_on_sauce => true) do |example|
+    @driver = SauceDriver.new_driver
+    begin
+      example.run
+    ensure
+      @driver.quit
+    end
+  end
 end

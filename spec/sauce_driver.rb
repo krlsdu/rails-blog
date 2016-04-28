@@ -12,7 +12,10 @@ module SauceDriver
       caps = {
         :platform => "Mac OS X 10.9",
         :browserName => "Chrome",
-        :version => "31"
+        :version => "31",
+        :name => "Test Sauce Lab",
+        :passed => "true",
+        :build => "build-123"
       }
     end
 

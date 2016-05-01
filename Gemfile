@@ -41,6 +41,7 @@ group :development, :test do
   gem 'cucumber-rails', :require => false
   gem 'database_cleaner'
   gem 'selenium-webdriver', '~> 2.53'
+  gem 'ruby-beautify'
 end
 
 group :development do

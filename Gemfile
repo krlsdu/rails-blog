@@ -37,7 +37,9 @@ group :development, :test do
   gem 'byebug'
   gem 'coveralls', require: false
   gem 'rspec-rails', '~> 3.0'
-  gem "codeclimate-test-reporter", require: nil
+  gem 'factory_girl_rails'
+  gem 'guard'
+  gem 'guard-rspec', require: false
   gem 'cucumber-rails', :require => false
   gem 'database_cleaner'
   gem 'selenium-webdriver', '~> 2.53'

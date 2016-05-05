@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe Article, type: :model do
-  let ( :article ) { FactoryGirl.build(:article) }
+  let (:article) { build(:article) }
 
   context "should not be saved when title" do
 
